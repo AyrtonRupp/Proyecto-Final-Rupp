@@ -3,7 +3,7 @@ const productos = [
     {
         id: "Nintendo Swicht",
         titulo: "Nintendo Swicht",
-        imagen: ".../img/imagenes_nintendo/nintendosw.jpg",
+        imagen: "../img/imagenes_nintendo/nintendosw.jpg",
         categoria: {
             nombre: "Nintendo",
             id: "nintendo"
@@ -13,7 +13,7 @@ const productos = [
     {
         id: "Nintendo Switch Lite",
         titulo: "Nintendo Switch Lite",
-        imagen: ".../img/imagenes_nintendo/nintendo1.jpg",
+        imagen: "../img/imagenes_nintendo/nintendo1.jpg",
         categoria: {
             nombre: "Nintendo",
             id: "nintendo"
@@ -23,7 +23,7 @@ const productos = [
     {
         id: "Pokemon Arceus",
         titulo: "Pokemon Arceus",
-        imagen: ".../img/imagenes_nintendo/arceus.jpg",
+        imagen: "../img/imagenes_nintendo/arceus.jpg",
         categoria: {
             nombre: "Nintendo",
             id: "nintendo"
@@ -33,7 +33,7 @@ const productos = [
     {
         id: "Mario Kart",
         titulo: "Mario Kart",
-        imagen: ".../img/imagenes_nintendo/mario-kart.png",
+        imagen: "../img/imagenes_nintendo/mario-kart.png",
         categoria: {
             nombre: "Nintendo",
             id: "nintendo"
@@ -43,7 +43,7 @@ const productos = [
     {
         id: "Playstation 5",
         titulo: "Playstation 5",
-        imagen: ".../img/imagenes_playstation/ps5.jpg",
+        imagen: "../img/imagenes_playstation/ps5.jpg",
         categoria: {
             nombre: "Playstation",
             id: "playstation"
@@ -53,7 +53,7 @@ const productos = [
     {
         id: "Uncharted",
         titulo: "Uncharted",
-        imagen: ".../img/imagenes_playstation/uncharted.jpg",
+        imagen: "../img/imagenes_playstation/uncharted.jpg",
         categoria: {
             nombre: "Playstation",
             id: "playstation"
@@ -63,7 +63,7 @@ const productos = [
     {
         id: "God of War:Ragnarok",
         titulo: "God of War:Ragnarok",
-        imagen: ".../img/imagenes_playstation/god.jpg",
+        imagen: "../img/imagenes_playstation/god.jpg",
         categoria: {
             nombre: "Playstation",
             id: "playstation"
@@ -73,7 +73,7 @@ const productos = [
     {
         id: "Horizon:Zero",
         titulo: "Horizon:Zero",
-        imagen: ".../img/imagenes_playstation/horizon.jpg",
+        imagen: "../img/imagenes_playstation/horizon.jpg",
         categoria: {
             nombre: "Playstation",
             id: "playstation"
@@ -83,7 +83,7 @@ const productos = [
     {
         id: "Xbox:One",
         titulo: "Xbox:One",
-        imagen: ".../img/imagenes_xbox/xbox.jpg",
+        imagen: "../img/imagenes_xbox/xbox.jpg",
         categoria: {
             nombre: "Xbox",
             id: "xbox"
@@ -93,7 +93,7 @@ const productos = [
     {
         id: "Cuphead",
         titulo: "Cuphead",
-        imagen: ".../img/imagenes_xbox/cup.jpg",
+        imagen: "../img/imagenes_xbox/cup.jpg",
         categoria: {
             nombre: "Xbox",
             id: "xbox"
@@ -103,7 +103,7 @@ const productos = [
     {
         id: "Contra:remastered",
         titulo: "Contra:remastered",
-        imagen: ".../img/imagenes_xbox/contra.jpg",
+        imagen: "../img/imagenes_xbox/contra.jpg",
         categoria: {
             nombre: "Xbox",
             id: "xbox"
@@ -113,7 +113,7 @@ const productos = [
     {
         id: "The Witcher 3",
         titulo: "The Witcher 3",
-        imagen: ".../img/imagenes_xbox/witcher.jpg",
+        imagen: "../img/imagenes_xbox/witcher.jpg",
         categoria: {
             nombre: "Xbox",
             id: "xbox"
