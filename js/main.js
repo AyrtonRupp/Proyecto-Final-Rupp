@@ -1,127 +1,25 @@
 // PRODUCTOS
-const productos = [
-    {
-        id: "Nintendo Swicht",
-        titulo: "Nintendo Swicht",
-        imagen: "../img/imagenes_nintendo/nintendosw.jpg",
-        categoria: {
-            nombre: "Nintendo",
-            id: "nintendo"
-        },
-        precio: 140700
-    },
-    {
-        id: "Nintendo Switch Lite",
-        titulo: "Nintendo Switch Lite",
-        imagen: "../img/imagenes_nintendo/nintendo1.jpg",
-        categoria: {
-            nombre: "Nintendo",
-            id: "nintendo"
-        },
-        precio: 76500
-    },
-    {
-        id: "Pokemon Arceus",
-        titulo: "Pokemon Arceus",
-        imagen: "../img/imagenes_nintendo/arceus.jpg",
-        categoria: {
-            nombre: "Nintendo",
-            id: "nintendo"
-        },
-        precio: 14200
-    },
-    {
-        id: "Mario Kart",
-        titulo: "Mario Kart",
-        imagen: "../img/imagenes_nintendo/mario-kart.png",
-        categoria: {
-            nombre: "Nintendo",
-            id: "nintendo"
-        },
-        precio: 13100
-    },
-    {
-        id: "Playstation 5",
-        titulo: "Playstation 5",
-        imagen: "../img/imagenes_playstation/ps5.jpg",
-        categoria: {
-            nombre: "Playstation",
-            id: "playstation"
-        },
-        precio: 200000
-    },
-    {
-        id: "Uncharted",
-        titulo: "Uncharted",
-        imagen: "../img/imagenes_playstation/uncharted.jpg",
-        categoria: {
-            nombre: "Playstation",
-            id: "playstation"
-        },
-        precio: 11500
-    },
-    {
-        id: "God of War:Ragnarok",
-        titulo: "God of War:Ragnarok",
-        imagen: "../img/imagenes_playstation/god.jpg",
-        categoria: {
-            nombre: "Playstation",
-            id: "playstation"
-        },
-        precio: 13800
-    },
-    {
-        id: "Horizon:Zero",
-        titulo: "Horizon:Zero",
-        imagen: "../img/imagenes_playstation/horizon.jpg",
-        categoria: {
-            nombre: "Playstation",
-            id: "playstation"
-        },
-        precio: 10000
-    },
-    {
-        id: "Xbox:One",
-        titulo: "Xbox:One",
-        imagen: "../img/imagenes_xbox/xbox.jpg",
-        categoria: {
-            nombre: "Xbox",
-            id: "xbox"
-        },
-        precio: 180000
-    },
-    {
-        id: "Cuphead",
-        titulo: "Cuphead",
-        imagen: "../img/imagenes_xbox/cup.jpg",
-        categoria: {
-            nombre: "Xbox",
-            id: "xbox"
-        },
-        precio: 1500
-    },
-    {
-        id: "Contra:remastered",
-        titulo: "Contra:remastered",
-        imagen: "../img/imagenes_xbox/contra.jpg",
-        categoria: {
-            nombre: "Xbox",
-            id: "xbox"
-        },
-        precio: 4300
-    },
-    {
-        id: "The Witcher 3",
-        titulo: "The Witcher 3",
-        imagen: "../img/imagenes_xbox/witcher.jpg",
-        categoria: {
-            nombre: "Xbox",
-            id: "xbox"
-        },
-        precio: 7550
-    }
-];
+const API_URL = './productos.json' 
+const productos = []
 
+
+async function obtenerInfoProductos(){
+    try{
+        const response = await fetch (API_URL)
+        const data = await response.json()
+
+            if (data.length > 0){
+                productos.push(...data)
+                cargarProductos(productos)
+                    onClickBtn()
+            }
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+    
+obtenerInfoProductos()
 
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
